@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c830f11c96ab437458aac127e78acc62, type: 3}
+  m_Name: White
+  m_EditorClassIdentifier: 
+  tileGround: {fileID: 11400000, guid: 9acfe7cc64801404d9ba8828883b6c46, type: 2}
+  tileDecorator: {fileID: 0}
+  tileHitbox: {fileID: 0}
+  tileHitboxSorted: {fileID: 0}
+  tileMiddle: {fileID: 0}
+  tileAbove: {fileID: 0}
+  tilePrefab: {fileID: 0}
+  weight: 0.5
+  edgeNorthLeft: White
+  edgeNorthRight: White
+  edgeSouthLeft: White
+  edgeSouthRight: White
+  edgeEastUp: White
+  edgeEastDown: White
+  edgeWestUp: White
+  edgeWestDown: White
+  tileImage: {fileID: 1268564969, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
