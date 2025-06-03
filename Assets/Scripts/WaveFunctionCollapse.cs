@@ -52,8 +52,8 @@ public class wfc : MonoBehaviour
 
     private void Start()
     {
-        sizeX = 160;
-        sizeY = 160;
+        sizeX = 50;
+        sizeY = 50;
 
         tileRules = new Dictionary<ushort, List<string>>();
 
@@ -217,7 +217,7 @@ public class wfc : MonoBehaviour
         {
             for (int y = 0; y < sizeY; y++)
             {
-                //Make edges rocks
+                //Make edges tiles
                 if (x == 0 || x == sizeX - 1 || y == 0 || y == sizeY - 1)
                 {
                     tiles[x, y].SetPossibilities(new List<ushort> { edgeTileID });

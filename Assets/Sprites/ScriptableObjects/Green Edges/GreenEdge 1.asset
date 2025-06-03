@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c830f11c96ab437458aac127e78acc62, type: 3}
-  m_Name: GreenEdgeE
+  m_Name: GreenEdge 1
   m_EditorClassIdentifier: 
-  tileGround: {fileID: 11400000, guid: fb92cc192675f0142ac56f504f606f61, type: 2}
+  tileGround: {fileID: 11400000, guid: 5988c3ffd1468994c9368144aa2014fe, type: 2}
   tileDecorator: {fileID: 0}
   tileHitbox: {fileID: 0}
   tileHitboxSorted: {fileID: 0}
@@ -21,11 +21,11 @@ MonoBehaviour:
   tilePrefab: {fileID: 0}
   weight: 0.5
   edgeNorthLeft: Green
-  edgeNorthRight: White
-  edgeSouthLeft: Green
-  edgeSouthRight: White
-  edgeEastUp: White
-  edgeEastDown: White
+  edgeNorthRight: Green
+  edgeSouthLeft: White
+  edgeSouthRight: Green
+  edgeEastUp: Green
+  edgeEastDown: Green
   edgeWestUp: Green
-  edgeWestDown: Green
-  tileImage: {fileID: -1076983388, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
+  edgeWestDown: White
+  tileImage: {fileID: 1031691160, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}

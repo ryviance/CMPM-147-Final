@@ -19,13 +19,13 @@ MonoBehaviour:
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
   tilePrefab: {fileID: 0}
-  weight: 0.3
-  edgeNorthLeft: Green
-  edgeNorthRight: Green
-  edgeSouthLeft: Green
-  edgeSouthRight: Green
-  edgeEastUp: Green
-  edgeEastDown: Green
-  edgeWestUp: Green
-  edgeWestDown: Green
+  weight: 10
+  edgeNorthLeft: White
+  edgeNorthRight: White
+  edgeSouthLeft: White
+  edgeSouthRight: White
+  edgeEastUp: White
+  edgeEastDown: White
+  edgeWestUp: White
+  edgeWestDown: White
   tileImage: {fileID: 1268564969, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
