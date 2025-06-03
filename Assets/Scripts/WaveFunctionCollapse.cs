@@ -26,6 +26,7 @@ public class wfc : MonoBehaviour
 
 
     //If you change this, change the enemy spawn bounds in EnemySpawner.cs and the camera view bound in cameraScript.cs
+
     private static int sizeX = 160;
     private static int sizeY = 160;
 
@@ -296,6 +297,7 @@ public class wfc : MonoBehaviour
                 if (tiles[x, y].GetEntropy() <= 1)
                 {
                     print(tiles[x, y].GetPossibilities().Count);
+
                     tileToPlaceGround = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileGround;
                     //tileToPlaceDecorator = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileDecorator;
                     //tileToPlaceHitbox = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileHitbox;
