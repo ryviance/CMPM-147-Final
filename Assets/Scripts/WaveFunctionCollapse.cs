@@ -148,7 +148,7 @@ public class wfc : MonoBehaviour
         //StartCoroutine(testWFCSlowly()); // Does the generation slowly, only have one uncommented
 
         // generates navmesh after tileset done building
-        //playerNavMesh.BuildNavMesh();
+        playerNavMesh.BuildNavMesh();
     }
 
     private IEnumerator testWFCSlowly()
@@ -227,7 +227,7 @@ public class wfc : MonoBehaviour
 
                 tileGetGround = groundTilemap.GetTile(new Vector3Int(x, y, 0));
                 //tileGetDecorator = decoratorTilemap.GetTile(new Vector3Int(x, y, 0));
-                //tileGetHitbox = hitboxesTileMap.GetTile(new Vector3Int(x, y, 0));
+                tileGetHitbox = hitboxesTileMap.GetTile(new Vector3Int(x, y, 0));
                 //tileGetHitboxSorted = hitboxesSortedTileMap.GetTile(new Vector3Int(x, y, 0));
                 //tileGetMiddle = middleTileMap.GetTile(new Vector3Int(x, y, 0));
                 //tileGetAbove = aboveTileMap.GetTile(new Vector3Int(x, y, 0));
@@ -236,8 +236,8 @@ public class wfc : MonoBehaviour
                 {
                     if (tileScriptableObjects[i].tileGround == tileGetGround 
                         //&&
-                        //tileScriptableObjects[i].tileDecorator == tileGetDecorator &&
-                        //tileScriptableObjects[i].tileHitbox == tileGetHitbox &&
+                        //tileScriptableObjects[i].tileDecorator == tileGetDecorator
+                        && tileScriptableObjects[i].tileHitbox == tileGetHitbox //&&
                         //tileScriptableObjects[i].tileHitboxSorted == tileGetHitboxSorted &&
                         //tileScriptableObjects[i].tileMiddle == tileGetMiddle &&
                         //tileScriptableObjects[i].tileAbove == tileGetAbove
@@ -300,7 +300,7 @@ public class wfc : MonoBehaviour
 
                     tileToPlaceGround = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileGround;
                     //tileToPlaceDecorator = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileDecorator;
-                    //tileToPlaceHitbox = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileHitbox;
+                    tileToPlaceHitbox = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileHitbox;
                     //tileToPlaceHitboxSorted = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileHitboxSorted;
                     //tileToPlaceMiddle = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileMiddle;
                     //tileToPlaceAbove = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileAbove;
