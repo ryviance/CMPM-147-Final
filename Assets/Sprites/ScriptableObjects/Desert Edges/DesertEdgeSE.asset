@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c830f11c96ab437458aac127e78acc62, type: 3}
-  m_Name: Brown
+  m_Name: DesertEdgeSE
   m_EditorClassIdentifier: 
-  tileGround: {fileID: 11400000, guid: 4203145a95f747c43acb3305f66a8ded, type: 2}
+  tileGround: {fileID: 11400000, guid: 2e9c42690045b9248b415754e105f6fa, type: 2}
   tileDecorator: {fileID: 0}
   tileHitbox: {fileID: 0}
   tileHitboxSorted: {fileID: 0}
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
   tilePrefab: {fileID: 0}
-  weight: 0.3
-  edgeNorthLeft: Brown
-  edgeNorthRight: Brown
-  edgeSouthLeft: Brown
-  edgeSouthRight: Brown
-  edgeEastUp: Brown
-  edgeEastDown: Brown
-  edgeWestUp: Brown
-  edgeWestDown: Brown
-  tileImage: {fileID: -1047603233, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
+  weight: 0.5
+  edgeNorthLeft: Orange
+  edgeNorthRight: White
+  edgeSouthLeft: White
+  edgeSouthRight: White
+  edgeEastUp: White
+  edgeEastDown: White
+  edgeWestUp: Orange
+  edgeWestDown: White
+  tileImage: {fileID: 336192065, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}

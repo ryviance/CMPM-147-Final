@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c830f11c96ab437458aac127e78acc62, type: 3}
-  m_Name: Border
+  m_Name: DesertEdge 2
   m_EditorClassIdentifier: 
-  tileGround: {fileID: 11400000, guid: adb0bab73ab83a0429c16524d37a77c7, type: 2}
+  tileGround: {fileID: 11400000, guid: e2309a1b190d809438dd9e921b171199, type: 2}
   tileDecorator: {fileID: 0}
-  tileHitbox: {fileID: 11400000, guid: be262aa53c084dd4eb04a0adb3f831fe, type: 2}
+  tileHitbox: {fileID: 0}
   tileHitboxSorted: {fileID: 0}
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
   tilePrefab: {fileID: 0}
-  weight: 0.2
-  edgeNorthLeft: Green
-  edgeNorthRight: Green
-  edgeSouthLeft: Green
-  edgeSouthRight: Green
-  edgeEastUp: Green
-  edgeEastDown: Green
-  edgeWestUp: Green
-  edgeWestDown: Green
-  tileImage: {fileID: -1812348936, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
+  weight: 0.5
+  edgeNorthLeft: Orange
+  edgeNorthRight: White
+  edgeSouthLeft: Orange
+  edgeSouthRight: Orange
+  edgeEastUp: White
+  edgeEastDown: Orange
+  edgeWestUp: Orange
+  edgeWestDown: Orange
+  tileImage: {fileID: -1466577879, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}

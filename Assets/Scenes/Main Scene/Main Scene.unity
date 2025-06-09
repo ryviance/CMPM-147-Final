@@ -672,6 +672,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9218126003271590433, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+      propertyPath: m_Radius
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -725,14 +729,82 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6014789077839944081, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: m_Area
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6014789077839944081, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: m_OverrideArea
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8047094455577623218, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
       propertyPath: m_Name
       value: Grid
       objectReference: {fileID: 0}
     - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: edgeTile
+      value: 
+      objectReference: {fileID: 11400000, guid: 9bfdf2d8a9a882349b3f4858f8bcd42e, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
       propertyPath: playerNavMesh
       value: 
       objectReference: {fileID: 2026305124}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.size
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 92a9a6d33c2c1584baec090c5709f03d, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[16]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4bfb36da8ed54e14f89256bf90918922, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: b265bcee36e3ebe40a3e2cc5d7840429, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: c609b716531cd684caa0d7d83c2299a8, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: 9232750817c59544b994e143dcdb1b40, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[20]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e998ac33c2a7784a80c03340b54fd44, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[21]
+      value: 
+      objectReference: {fileID: 11400000, guid: 92a6216180dedb249b24c265db1e4df0, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[22]
+      value: 
+      objectReference: {fileID: 11400000, guid: 89a633e6027591e4f865953de7b17a6e, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[23]
+      value: 
+      objectReference: {fileID: 11400000, guid: e8e57414d7300fa43a7884f6fc7b07b3, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[24]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2d6f3977373b0df45a42f1496ff45b59, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[25]
+      value: 
+      objectReference: {fileID: 11400000, guid: 639ea9f8e8af29c45af765bdfb7ba129, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[26]
+      value: 
+      objectReference: {fileID: 11400000, guid: 66f2037a3480baa49b4b20a5a60bf6b6, type: 2}
+    - target: {fileID: 9202027580880048498, guid: eee221c32f99e354ca452ba05bf2d7c9, type: 3}
+      propertyPath: tileScriptableObjects.Array.data[27]
+      value: 
+      objectReference: {fileID: 11400000, guid: 363ee9afe7e4a9340b2189c7c553e369, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
