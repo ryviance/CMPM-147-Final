@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c830f11c96ab437458aac127e78acc62, type: 3}
-  m_Name: Green
+  m_Name: Orange
   m_EditorClassIdentifier: 
-  tileGround: {fileID: 11400000, guid: adb0bab73ab83a0429c16524d37a77c7, type: 2}
+  tileGround: {fileID: 11400000, guid: 4203145a95f747c43acb3305f66a8ded, type: 2}
   tileDecorator: {fileID: 0}
   tileHitbox: {fileID: 0}
   tileHitboxSorted: {fileID: 0}
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
   tilePrefab: {fileID: 0}
-  weight: 15
-  edgeNorthLeft: Green
-  edgeNorthRight: Green
-  edgeSouthLeft: Green
-  edgeSouthRight: Green
-  edgeEastUp: Green
-  edgeEastDown: Green
-  edgeWestUp: Green
-  edgeWestDown: Green
-  tileImage: {fileID: -1812348936, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}
+  weight: 1
+  edgeNorthLeft: Orange
+  edgeNorthRight: Orange
+  edgeSouthLeft: Orange
+  edgeSouthRight: Orange
+  edgeEastUp: Orange
+  edgeEastDown: Orange
+  edgeWestUp: Orange
+  edgeWestDown: Orange
+  tileImage: {fileID: -1047603233, guid: 024301a443205d04ba7c5b88ce8ac41a, type: 3}

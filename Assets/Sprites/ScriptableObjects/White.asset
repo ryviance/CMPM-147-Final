@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tileGround: {fileID: 11400000, guid: 9acfe7cc64801404d9ba8828883b6c46, type: 2}
   tileDecorator: {fileID: 0}
-  tileHitbox: {fileID: 0}
+  tileHitbox: {fileID: 11400000, guid: 9acfe7cc64801404d9ba8828883b6c46, type: 2}
   tileHitboxSorted: {fileID: 0}
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
