@@ -16,10 +16,12 @@ public class BotWander : MonoBehaviour
 
         // Kick‐start the Bot at Z = -0.1
         Vector3 startPos = transform.position;
-        startPos.z = 5f;
+        startPos.z = -1f;
         transform.position = startPos;
 
         nextRoamTime = Time.time + roamDelay;
+
+        GetComponent<NavMeshAgent>().updateRotation = false;
     }
 
     void Update()
@@ -40,13 +42,15 @@ public class BotWander : MonoBehaviour
             agent.SetDestination(new Vector3(randomDestination.x, randomDestination.y, 0f));
             nextRoamTime = Time.time + roamDelay;
         }
+
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     // After the agent has moved this frame, force Z back to +0.1 so that the user can see bots
     void LateUpdate()
     {
         Vector3 p = transform.position;
-        p.z = 5f;
+        p.z = -1f;
         transform.position = p;
     }
 
