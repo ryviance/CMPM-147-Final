@@ -5,50 +5,69 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreenManager : MonoBehaviour
 {
+    public static TitleScreenManager Instance { get; private set; }
+
+    [Header("Bot UI")]
     public GameObject botInputTemplate;
     public Transform botListContainer;
 
-    private int botCount = 1;
     private const int maxBots = 4;
+    public int BotCount { get; private set; } = 1;  // persistent count
 
-    void Start() { }
+    void Awake()
+    {
+        // singleton + persist
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else Destroy(gameObject);
+    }
+
+    void Start()
+    {
+        // seed UI to match BotCount if reloading title scene
+        BotCount = 1;
+        Instance.BotCount = BotCount;
+    }
 
     public void AddBot()
     {
-        if (botCount >= maxBots) return;
-        botCount++;
-        GameObject newBot = Instantiate(botInputTemplate, botListContainer);
-        newBot.name = "BotInput_" + botCount;
+        if (BotCount >= maxBots) return;
+
+        BotCount++;
+        Instance.BotCount = BotCount;
+
+        var newBot = Instantiate(botInputTemplate, botListContainer);
+        newBot.name = "BotInput_" + BotCount;
         newBot.SetActive(true);
 
-        TMP_InputField tmpField = newBot.GetComponentInChildren<TMP_InputField>();
-        if (tmpField != null)
-            tmpField.text = $"Bot {botCount}";
+        var tmp = newBot.GetComponentInChildren<TMP_InputField>();
+        if (tmp != null) tmp.text = $"Bot {BotCount}";
         else
         {
-            InputField normalInput = newBot.GetComponentInChildren<InputField>();
-            if (normalInput != null)
-                normalInput.text = $"Bot {botCount}";
+            var nf = newBot.GetComponentInChildren<InputField>();
+            if (nf != null) nf.text = $"Bot {BotCount}";
         }
     }
 
     public void RemoveBot()
     {
-        if (botCount <= 1) return;
-        int lastIndex = botListContainer.childCount - 1;
-        if (lastIndex >= 0)
+        if (BotCount <= 1) return;
+
+        int last = botListContainer.childCount - 1;
+        if (last >= 0 && botListContainer.GetChild(last).gameObject != botInputTemplate)
         {
-            Transform lastBot = botListContainer.GetChild(lastIndex);
-            if (lastBot.gameObject != botInputTemplate)
-            {
-                Destroy(lastBot.gameObject);
-                botCount--;
-            }
+            Destroy(botListContainer.GetChild(last).gameObject);
+            BotCount--;
+            Instance.BotCount = BotCount;
         }
     }
 
     public void StartGame()
     {
+        // TitleScreenManager survives, carrying BotCount
         SceneManager.LoadScene("Main Scene");
     }
 }

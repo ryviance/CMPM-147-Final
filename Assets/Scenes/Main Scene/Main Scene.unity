@@ -351,7 +351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_Name
-      value: Bot (3)
+      value: Bot 4
       objectReference: {fileID: 0}
     - target: {fileID: 3665732631445629476, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -406,6 +406,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+--- !u!1 &984547213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+  m_PrefabInstance: {fileID: 984547212}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1870125608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -416,7 +421,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_Name
-      value: Bot (2)
+      value: Bot 3
       objectReference: {fileID: 0}
     - target: {fileID: 3665732631445629476, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,6 +480,60 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+--- !u!1 &1870125609 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+  m_PrefabInstance: {fileID: 1870125608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1958313590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958313592}
+  - component: {fileID: 1958313591}
+  m_Layer: 0
+  m_Name: BotManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1958313591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958313590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c8c9bd6442c2e419d13e216d9a3150, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  botSlots:
+  - {fileID: 479260419165053072}
+  - {fileID: 2136555453}
+  - {fileID: 1870125609}
+  - {fileID: 984547213}
+--- !u!4 &1958313592
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958313590}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 38.54489, y: 20.430431, z: -0.13548115}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2026305122
 GameObject:
   m_ObjectHideFlags: 0
@@ -565,7 +624,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_Name
-      value: Bot (1)
+      value: Bot 2
       objectReference: {fileID: 0}
     - target: {fileID: 3665732631445629476, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -620,6 +679,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+--- !u!1 &2136555453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+  m_PrefabInstance: {fileID: 2136555452}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &479260419165053071
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -630,7 +694,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_Name
-      value: Bot
+      value: Bot 1
       objectReference: {fileID: 0}
     - target: {fileID: 3665732631445629476, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -677,6 +741,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+--- !u!1 &479260419165053072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2092806697862842438, guid: 58bedc4b8cacc0640b9ce0faa83c814f, type: 3}
+  m_PrefabInstance: {fileID: 479260419165053071}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5097514787301539049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -818,3 +887,4 @@ SceneRoots:
   - {fileID: 2136555452}
   - {fileID: 1870125608}
   - {fileID: 984547212}
+  - {fileID: 1958313592}
