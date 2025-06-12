@@ -35,11 +35,11 @@ public class NewsManager : MonoBehaviour
 
     public void clickHeadline(string[] names, AoeType eventType)
     {
-        if (eventType == "unsafe")
+        if (eventType == AoeType.Unsafe)
         {
             generateNegative(names);
         }
-        if (eventType == "safe")
+        if (eventType == AoeType.Safe)
         {
             generatePositive(names);
         }
