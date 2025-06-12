@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        GenerateStats(Random.Range(0, 1000));
+        GenerateStats(Random.Range(0, 100));
     }
     private void Update()
     {
