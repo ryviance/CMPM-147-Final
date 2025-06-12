@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditor.VersionControl;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class NewsManager : MonoBehaviour
 {
@@ -63,7 +63,7 @@ public class NewsManager : MonoBehaviour
         {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "have recoverd x health");
+        createHeadline(victims + "has recovered x health");
     }
 
     private void generateNegative(string[] names)
@@ -83,7 +83,7 @@ public class NewsManager : MonoBehaviour
         for (int i = 0; i < names.Length; i++) {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "have recieved x damage");
+        createHeadline(victims + "has recieved x damage");
     }
 
     public void createHeadline(string message)
@@ -92,10 +92,12 @@ public class NewsManager : MonoBehaviour
         Headline headlineScript = newHeadline.GetComponent<Headline>();
         headlineScript.Initialize(newsContainer.rect.width, pixelsPerSecond, message);
 
+
         RectTransform rt = newHeadline.GetComponent<RectTransform>();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rt);
         float yPos = rt.anchoredPosition.y;
         Vector2 startPos = new Vector2(newsContainer.rect.width + nextNewsX, yPos);
         rt.anchoredPosition = startPos;
-        nextNewsX += rt.rect.width + lineSpacing;
+        nextNewsX += rt.rect.width; //+ lineSpacing;
     }
 }
