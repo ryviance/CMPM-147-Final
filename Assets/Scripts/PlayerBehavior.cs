@@ -19,6 +19,13 @@ public class Player : MonoBehaviour
     {
         GenerateStats(Random.Range(0, 1001));
     }
+    private void Update()
+    {
+        if (Strength <= 0)
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
 
     private void GenerateStats(int seed)
     {
@@ -73,8 +80,18 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag == "Zone")
         {
             string[] myname = { this.gameObject.name };
+            int valueToChange = Random.Range(5, 10);
             print(this.gameObject.name);
-            NewsManager.Instance.clickHeadline(myname, collision.gameObject.GetComponent<AoeZone>().Type);
+            NewsManager.Instance.clickHeadline(myname, collision.gameObject.GetComponent<AoeZone>().Type, valueToChange);
+
+            if (collision.gameObject.GetComponent<AoeZone>().Type == AoeType.Safe)
+            {
+                ApplyEffect("strength", valueToChange);
+            } else
+            {
+                ApplyEffect("strength", (valueToChange * -1));
+            }
+
         }
     }
 }

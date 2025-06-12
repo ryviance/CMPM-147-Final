@@ -33,19 +33,19 @@ public class NewsManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void clickHeadline(string[] names, AoeType eventType)
+    public void clickHeadline(string[] names, AoeType eventType, int value)
     {
         if (eventType == AoeType.Unsafe)
         {
-            generateNegative(names);
+            generateNegative(names, value);
         }
         if (eventType == AoeType.Safe)
         {
-            generatePositive(names);
+            generatePositive(names, value);
         }
     }
 
-    private void generatePositive(string[] names)
+    private void generatePositive(string[] names, int value)
     {
         string[] positiveEvents = new string[]
         {
@@ -63,10 +63,10 @@ public class NewsManager : MonoBehaviour
         {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "has recovered x health");
+        createHeadline(victims + "has recovered " + value + " health");
     }
 
-    private void generateNegative(string[] names)
+    private void generateNegative(string[] names, int value)
     {
         string[] negativeEvents = new string[]
         {
@@ -83,7 +83,7 @@ public class NewsManager : MonoBehaviour
         for (int i = 0; i < names.Length; i++) {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "has recieved x damage");
+        createHeadline(victims + "has recieved " + value + " damage");
     }
 
     public void createHeadline(string message)
