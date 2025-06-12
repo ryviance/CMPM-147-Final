@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Player : MonoBehaviour
 {
@@ -36,6 +37,8 @@ public class Player : MonoBehaviour
         Agility *= 100;
         Charisma *= 100;
         Endurance *= 100;
+
+        this.gameObject.GetComponent<NavMeshAgent>().speed = Agility / 10;
     }
 
     public void ApplyEffect(string statName, float delta)
