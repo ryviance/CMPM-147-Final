@@ -19,7 +19,7 @@ MonoBehaviour:
   tileMiddle: {fileID: 0}
   tileAbove: {fileID: 0}
   tilePrefab: {fileID: 0}
-  weight: 0.5
+  weight: 0.2
   edgeNorthLeft: Orange
   edgeNorthRight: Orange
   edgeSouthLeft: White
