@@ -149,6 +149,9 @@ public class wfc : MonoBehaviour
 
         // generates navmesh after tileset done building
         playerNavMesh.BuildNavMesh();
+
+        GameObject botmanager = GameObject.Find("BotManager");
+        botmanager.GetComponent<BotDisabler>().PlaceBots();
     }
 
     private IEnumerator testWFCSlowly()

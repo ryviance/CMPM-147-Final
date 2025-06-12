@@ -10,14 +10,9 @@ public class Player : MonoBehaviour
     [SerializeField] public float Charisma;
     [SerializeField] public float Endurance;
 
-    public Player(int seed)
-    {
-        GenerateStats(420);
-    }
-
     private void Start()
     {
-        GenerateStats(Random.Range(0, 1001));
+        GenerateStats(Random.Range(0, 1000));
     }
     private void Update()
     {
