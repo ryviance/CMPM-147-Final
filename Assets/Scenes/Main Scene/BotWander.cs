@@ -22,7 +22,7 @@ public class BotWander : MonoBehaviour
 
         // keep bots visible above your background
         Vector3 p = transform.position;
-        p.z = -1f;
+        p.z = 0f;
         transform.position = p;
 
         nextRoamTime = Time.time + roamDelay;
@@ -103,7 +103,7 @@ public class BotWander : MonoBehaviour
     {
         // maintain Z offset
         Vector3 p = transform.position;
-        p.z = -1f;
+        p.z = 0f;
         transform.position = p;
     }
 }

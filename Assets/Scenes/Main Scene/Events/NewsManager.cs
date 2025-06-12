@@ -63,7 +63,7 @@ public class NewsManager : MonoBehaviour
         {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "have all recoverd x health");
+        createHeadline(victims + "have recoverd x health");
     }
 
     private void generateNegative(string[] names)
@@ -83,7 +83,7 @@ public class NewsManager : MonoBehaviour
         for (int i = 0; i < names.Length; i++) {
             victims += names[i] + ", ";
         }
-        createHeadline(victims + "have all recieved x damage");
+        createHeadline(victims + "have recieved x damage");
     }
 
     public void createHeadline(string message)

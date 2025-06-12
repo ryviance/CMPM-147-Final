@@ -1,3 +1,4 @@
+using UnityEditor.UI;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -16,7 +17,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        GenerateStats(420);
+        GenerateStats(Random.Range(0, 1001));
     }
 
     private void GenerateStats(int seed)
@@ -60,6 +61,18 @@ public class Player : MonoBehaviour
             default:
                 Debug.LogWarning($"Stat {statName} not found.");
                 break;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print(collision.gameObject.name);
+
+        if (collision.gameObject.tag == "Zone")
+        {
+            string[] myname = { this.gameObject.name };
+            print(this.gameObject.name);
+            NewsManager.Instance.clickHeadline(myname, collision.gameObject.GetComponent<AoeZone>().Type);
         }
     }
 }

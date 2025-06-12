@@ -296,7 +296,7 @@ public class wfc : MonoBehaviour
             {
                 if (tiles[x, y].GetEntropy() <= 1)
                 {
-                    print(tiles[x, y].GetPossibilities().Count);
+                    //print(tiles[x, y].GetPossibilities().Count);
 
                     tileToPlaceGround = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileGround;
                     //tileToPlaceDecorator = tileScriptableObjects[tiles[x, y].GetPossibilities()[0]].tileDecorator;
