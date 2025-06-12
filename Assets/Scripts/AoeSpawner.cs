@@ -36,4 +36,22 @@ public class AoeSpawner : MonoBehaviour
         zone.expansionSpeed = expansionSpeed;
         zone.Initialize(wp, type);
     }
+
+    public void SpawnAoeAtBot(AoeType type, GameObject bot)
+    {
+        // get click position in world
+        Vector3 wp = bot.transform.position;
+        wp.z = 0f;
+
+        // pick the right prefab for freeze vs burn
+        AoeZone prefab = (type == AoeType.Safe)
+            ? freezeAoePrefab
+            : burnAoePrefab;
+
+        // instantiate and apply settings
+        AoeZone zone = Instantiate(prefab);
+        zone.startRadius = startRadius;
+        zone.expansionSpeed = expansionSpeed;
+        zone.Initialize(wp, type);
+    }
 }

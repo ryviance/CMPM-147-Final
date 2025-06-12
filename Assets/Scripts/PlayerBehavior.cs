@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     [SerializeField] public float Charisma;
     [SerializeField] public float Endurance;
 
+    public AoeSpawner spawner;
+
     private void Start()
     {
         GenerateStats(Random.Range(0, 100));
@@ -82,11 +84,21 @@ public class Player : MonoBehaviour
             if (collision.gameObject.GetComponent<AoeZone>().Type == AoeType.Safe)
             {
                 ApplyEffect("strength", valueToChange);
-            } else
+            }
+            else
             {
                 ApplyEffect("strength", (valueToChange * -1));
             }
 
+        }
+
+        if (collision.gameObject.name == "Event_green")
+        {
+            spawner.SpawnAoeAtBot(AoeType.Unsafe, gameObject);
+        }
+        if (collision.gameObject.name == "Event_orange")
+        {
+            spawner.SpawnAoeAtBot(AoeType.Safe, gameObject);
         }
     }
 }
