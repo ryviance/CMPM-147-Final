@@ -64,11 +64,14 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        print(collision.gameObject.name);
+
         if (collision.gameObject.tag == "Zone")
         {
-            string[] myname = {this.gameObject.name};
+            string[] myname = { this.gameObject.name };
+            print(this.gameObject.name);
             NewsManager.Instance.clickHeadline(myname, collision.gameObject.GetComponent<AoeZone>().Type);
         }
     }
