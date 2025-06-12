@@ -1,17 +1,22 @@
 using UnityEngine;
 
-public class Player
+public class Player : MonoBehaviour
 {
     // Player stats
-    public float Strength { get; private set; }
-    public float Intelligence { get; private set; }
-    public float Agility { get; private set; }
-    public float Charisma { get; private set; }
-    public float Endurance { get; private set; }
+    [SerializeField] public float Strength;
+    [SerializeField] public float Intelligence;
+    [SerializeField] public float Agility;
+    [SerializeField] public float Charisma;
+    [SerializeField] public float Endurance;
 
     public Player(int seed)
     {
-        GenerateStats(seed);
+        GenerateStats(420);
+    }
+
+    private void Start()
+    {
+        GenerateStats(420);
     }
 
     private void GenerateStats(int seed)
