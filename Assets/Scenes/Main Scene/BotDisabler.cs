@@ -9,5 +9,10 @@ public class BotDisabler : MonoBehaviour
         int keep = TitleScreenManager.Instance.BotCount;
         for (int i = keep; i < botSlots.Length; i++)
             botSlots[i].SetActive(false);
+
+        for (int i = 0; i < TitleScreenManager.Instance.listofnames.Count; i++)
+        {
+            botSlots[i].name = TitleScreenManager.Instance.listofnames[i];
+        }
     }
 }

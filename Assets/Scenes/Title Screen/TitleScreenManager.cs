@@ -2,6 +2,8 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
+using static System.Net.Mime.MediaTypeNames;
 
 public class TitleScreenManager : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class TitleScreenManager : MonoBehaviour
     [Header("Bot UI")]
     public GameObject botInputTemplate;
     public Transform botListContainer;
+    public List<string> listofnames = new List<string>();
 
     private const int maxBots = 4;
     public int BotCount { get; private set; } = 1;  // persistent count
@@ -67,6 +70,17 @@ public class TitleScreenManager : MonoBehaviour
 
     public void StartGame()
     {
+        GameObject participants = GameObject.Find("ParticipantsList");
+        TextMeshProUGUI[] Names = participants.GetComponentsInChildren<TextMeshProUGUI>(true);
+        foreach (var tmp in Names)
+        {
+            print(tmp.text);
+            if (tmp.text != "Enter text...")
+            {
+                listofnames.Add(tmp.text);
+            }
+        }
+
         // TitleScreenManager survives, carrying BotCount
         SceneManager.LoadScene("Main Scene");
     }

@@ -38,7 +38,7 @@ public class Player : MonoBehaviour
         Charisma *= 100;
         Endurance *= 100;
 
-        this.gameObject.GetComponent<NavMeshAgent>().speed = Agility / 10;
+        this.gameObject.GetComponent<NavMeshAgent>().speed = (Agility / 10) + 0.5f;
     }
 
     public void ApplyEffect(string statName, float delta)
