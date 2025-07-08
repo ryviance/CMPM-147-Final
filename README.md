@@ -10,3 +10,5 @@ The Starvation Tournament takes place on a procedurally generated map populated 
 - Right-Click: Spawn fire AoE <br>
 
 ![image](https://github.com/user-attachments/assets/e17d62ca-015d-470a-a780-568c3684c33c)
+
+Demo: https://hunter-kingsley.itch.io/the-starvation-tournament
